@@ -1,7 +1,3 @@
-/* https://bytewebster.com/ */
-/* https://bytewebster.com/ */
-/* https://bytewebster.com/ */
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500&display=swap");
 body {
   margin: 0;
@@ -267,4 +263,18 @@ nav > div:last-child > .active:after {
   height: 100vh;
   background-color: #fff;
   z-index: 100;
+}
+
+
+.titulos{
+  background-color: #1d3bf2;
+  color: white;
+  padding: 0px 10px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+}
+.titulos:hover, .titulos:active {
+  background-color: orange;
+  color: white;
 }

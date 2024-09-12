@@ -1,49 +1,45 @@
-// https://bytewebster.com/
-// https://bytewebster.com/
-// https://bytewebster.com/
-
 const data = [
     {
         place:'Switzerland Alps',
         title:'SAINT',
         title2:'ANTONIEN',
         description:'Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It\'s a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.',
-        image:'https://cdn.pixabay.com/photo/2023/10/27/09/24/mountains-8344601_1280.jpg'
+        image:' /img/img1.jpeg'
     },
     {
         place:'Japan Alps',
         title:'NANGANO',
         title2:'PREFECTURE',
         description:'Nagano Prefecture, set within the majestic Japan Alps, is a cultural treasure trove with its historic shrines and temples, particularly the famous Zenkō-ji. The region is also a hotspot for skiing and snowboarding, offering some of the country\'s best powder.',
-        image:'https://cdn.pixabay.com/photo/2017/01/19/23/46/church-1993645_1280.jpg'
+       image:' /img/img2.jpeg'
     },
     {
         place:'Casablanca - Morocco',
         title:'MARRAKECH',
         title2:'MEROUGA',
         description:'The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.',
-        image:'https://cdn.pixabay.com/photo/2018/09/03/23/56/sea-3652697_1280.jpg'
+        image:' /img/img3.jpeg'
     },
     {
         place:'Sierra Nevada - USA',
         title:'YOSEMITE',
         title2:'NATIONAL PARAK',
         description:'Yosemite National Park is a showcase of the American wilderness, revered for its towering granite monoliths, ancient giant sequoias, and thundering waterfalls. The park offers year-round recreational activities, from rock climbing to serene valley walks.',
-        image:'https://cdn.pixabay.com/photo/2016/06/20/03/15/pier-1467984_1280.jpg'
+        image:' /img/img4.jpeg'
     },
     {
         place:'Tarifa - Spain',
         title:'LOS LANCES',
         title2:'BEACH',
         description:'Los Lances Beach in Tarifa is a coastal paradise known for its consistent winds, making it a world-renowned spot for kitesurfing and windsurfing. The beach\'s long, sandy shores provide ample space for relaxation and sunbathing, with a vibrant atmosphere of beach bars and cafes.',
-        image:'https://cdn.pixabay.com/photo/2020/07/08/08/07/daisy-5383056_1280.jpg'
+        image:' /img/img5.jpeg'
     },
     {
         place:'Cappadocia - Turkey',
         title:'Göreme',
         title2:'Valley',
         description:'Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.',
-        image:'https://cdn.pixabay.com/photo/2022/05/18/10/27/sea-7204955_1280.jpg'
+        image:' /img/img1.jpeg'
     },
 ]
 
