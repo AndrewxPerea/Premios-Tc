@@ -1,24 +1,24 @@
 const data = [
     {
-        place:'Switzerland Alps',
-        title:'SAINT',
-        title2:'ANTONIEN',
-        description:'Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It\'s a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.',
+        place:'TuCable',
+        title:'Gran Fiesta',
+        title2:'Premios TuCable',
+        description:'"Los Premios TuCable 2024. Una celebración de excelencia. Un reconocimiento a todo lo que hemos construido juntos.',
         image:' /img/img1.jpeg'
     },
     {
-        place:'Japan Alps',
-        title:'NANGANO',
-        title2:'PREFECTURE',
-        description:'Nagano Prefecture, set within the majestic Japan Alps, is a cultural treasure trove with its historic shrines and temples, particularly the famous Zenkō-ji. The region is also a hotspot for skiing and snowboarding, offering some of the country\'s best powder.',
+        place:'Black And White',
+        title:'Tematica de Vestuario',
+        title2:'Blanco y negro',
+        description:'La temática de este año: trajes negros o blancos. Una noche para destacar, para brillar.',
        image:' /img/img2.jpeg'
     },
     {
-        place:'Casablanca - Morocco',
-        title:'MARRAKECH',
-        title2:'MEROUGA',
+        place:'Cerritos',
+        title:'Hotel Visus',
+        title2:'Cerritos',
         description:'The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.',
-        image:' /img/img3.jpeg'
+        image:' /img/img7.png'
     },
     {
         place:'Sierra Nevada - USA',
@@ -27,20 +27,7 @@ const data = [
         description:'Yosemite National Park is a showcase of the American wilderness, revered for its towering granite monoliths, ancient giant sequoias, and thundering waterfalls. The park offers year-round recreational activities, from rock climbing to serene valley walks.',
         image:' /img/img4.jpeg'
     },
-    {
-        place:'Tarifa - Spain',
-        title:'LOS LANCES',
-        title2:'BEACH',
-        description:'Los Lances Beach in Tarifa is a coastal paradise known for its consistent winds, making it a world-renowned spot for kitesurfing and windsurfing. The beach\'s long, sandy shores provide ample space for relaxation and sunbathing, with a vibrant atmosphere of beach bars and cafes.',
-        image:' /img/img5.jpeg'
-    },
-    {
-        place:'Cappadocia - Turkey',
-        title:'Göreme',
-        title2:'Valley',
-        description:'Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.',
-        image:' /img/img1.jpeg'
-    },
+   
 ]
 
 const _ = (id)=>document.getElementById(id)
@@ -105,7 +92,7 @@ function animate(target, duration, properties) {
   });
 }
 
-let order = [0, 1, 2, 3, 4, 5];
+let order = [0, 1, 2, 3];
 let detailsEven = true;
 
 let offsetTop = 200;
