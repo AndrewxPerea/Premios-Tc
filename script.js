@@ -14,29 +14,29 @@ const data = [
        image:' /img/img2.jpeg'
     },
     {
-        place:'Cerritos',
+        place:'Lugar del Evento',
         title:'Hotel Visus',
-        title2:'Cerritos',
-        description:'The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.',
+        title2:'Cerritos, Entrada 6 Malabar',
+        description:'"No es solo una premiación, es una celebración de todo lo que somos y lo que hemos logrado juntos."',
         image:' /img/img7.png'
     },
     {
-        place:'Sierra Nevada - USA',
-        title:'YOSEMITE',
-        title2:'NATIONAL PARAK',
-        description:'Yosemite National Park is a showcase of the American wilderness, revered for its towering granite monoliths, ancient giant sequoias, and thundering waterfalls. The park offers year-round recreational activities, from rock climbing to serene valley walks.',
-        image:' /img/img4.jpeg'
+        place:'Fecha',
+        title:'30 de Septiembre 2024',
+        title2:'Te esperamos',
+        description:'"No faltes a los Premios TuCable 2024. Confirma tu asistencia. Te esperamos para una noche inolvidable."',
+        image:' /img/img3.jpeg'
     },
    
 ]
 
 const _ = (id)=>document.getElementById(id)
-const cards = data.map((i, index)=>`<div class="card" id="card${index}" style="background-image:url(${i.image})"  ></div>`).join('')
+const cards = data.map((i, index)=>`<div class="card" id="card${index}" style="background-image:url(${i.image}); width: 200px; height: 300px;"></div>
+`).join('');
 
 
 
 const cardContents = data.map((i, index)=>`<div class="card-content" id="card-content-${index}">
-<div class="content-start"></div>
 <div class="content-place">${i.place}</div>
 <div class="content-title-1">${i.title}</div>
 <div class="content-title-2">${i.title2}</div>
@@ -86,7 +86,7 @@ function animate(target, duration, properties) {
   return new Promise((resolve) => {
     gsap.to(target, {
       ...properties,
-      duration: duration,
+      duration: 2,
       onComplete: resolve,
     });
   });
@@ -174,14 +174,14 @@ function init() {
     gsap.to(getCard(i), {
       x: offsetLeft + index * (cardWidth + gap),
       zIndex: 30,
-      delay: 0.05 * index,
+      delay: 1 * index,
       ease,
       delay: startDelay,
     });
     gsap.to(getCardContent(i), {
       x: offsetLeft + index * (cardWidth + gap),
       zIndex: 40,
-      delay: 0.05 * index,
+      delay: 1 * index,
       ease,
       delay: startDelay,
     });
@@ -333,8 +333,8 @@ function step() {
 }
 
 async function loop() {
-  await animate(".indicator", 2, { x: 0 });
-  await animate(".indicator", 0.8, { x: window.innerWidth, delay: 0.3 });
+  await animate(".indicator", 2, { x: 0.9 });
+  await animate(".indicator", 0.8, { x: window.innerWidth, delay: 0.9 });
   set(".indicator", { x: -window.innerWidth });
   await step();
   loop();

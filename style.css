@@ -128,7 +128,7 @@ body {
 }
 .details > .cta > .discover {
   border: 1px solid #ffffff;
-  background-color: transparent;
+  background-color: #1d3bf2;
   height: 36px;
   border-radius: 99px;
   color: #ffffff;
@@ -275,6 +275,59 @@ nav > div:last-child > .active:after {
   display: inline-block;
 }
 .titulos:hover, .titulos:active {
-  background-color: orange;
+  background-color: #e6560d;
   color: white;
+}
+
+
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+  /* Estilos para pantallas de escritorio */
+  .details {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .pagination {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Estilos para tabletas */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .details {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .pagination {
+    position: static;
+    margin: 20px 0;
+  }
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav .titulos {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .details {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .cta button {
+    width: 100%;
+  }
 }
