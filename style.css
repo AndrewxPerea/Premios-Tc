@@ -256,12 +256,6 @@ nav > div:last-child > .active:after {
 }
 
 .cover {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
   z-index: 100;
 }
 
@@ -278,56 +272,81 @@ nav > div:last-child > .active:after {
   background-color: #e6560d;
   color: white;
 }
-
-
-
-/* Estilos para pantallas grandes */
-@media (min-width: 1024px) {
-  /* Estilos para pantallas de escritorio */
-  .details {
-    width: 80%;
-    margin: 0 auto;
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .details .title-1,
+  .details .title-2 {
+    font-size: 32px; /* Reduce el tamaño del texto */
   }
-  
-  .pagination {
-    position: fixed;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-  }
-}
 
-/* Estilos para tabletas */
-@media (max-width: 1024px) and (min-width: 768px) {
-  .details {
-    width: 90%;
-    margin: 0 auto;
+  .details .desc,
+  .details .cta {
+    width: 100%; /* Ajusta el ancho para que ocupe toda la pantalla */
   }
-  
-  .pagination {
-    position: static;
-    margin: 20px 0;
-  }
-}
 
-/* Estilos para móviles */
-@media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: center;
+    padding: 10px 20px;
   }
-  
-  nav .titulos {
-    padding: 8px;
-    font-size: 14px;
+
+  .pagination .progress-sub-container {
+    width: 100%; /* Ancho completo para progresos */
   }
-  
-  .details {
-    width: 95%;
-    margin: 0 auto;
+}
+
+/* Para tablets (pantallas medianas) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .details .title-1,
+  .details .title-2 {
+    font-size: 48px; /* Ajuste intermedio para pantallas medianas */
   }
-  
-  .cta button {
-    width: 100%;
+
+  .details .desc,
+  .details .cta {
+    width: 90%; /* Menos margen que en pantallas grandes */
+  }
+
+  nav {
+    padding: 15px 30px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .details > .cta > .discover {
+    font-size: 10px; /* Reduce el tamaño del texto */
+    padding: 4px 16px;
+  }
+
+  .details > .cta > .bookmark,
+  .details > .cta > .star {
+    width: 30px;
+    height: 30px; /* Ajusta el tamaño de los íconos */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .details > .cta > .discover {
+    font-size: 11px;
+    padding: 4px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .details > .cta > .discover {
+    font-size: 10px; /* Reduce el tamaño del texto */
+    padding: 4px 16px;
+  }
+
+  .details > .cta > .bookmark,
+  .details > .cta > .star {
+    width: 30px;
+    height: 30px; /* Ajusta el tamaño de los íconos */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .details > .cta > .discover {
+    font-size: 11px;
+    padding: 4px 20px;
   }
 }

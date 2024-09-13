@@ -31,7 +31,7 @@ const data = [
 ]
 
 const _ = (id)=>document.getElementById(id)
-const cards = data.map((i, index)=>`<div class="card" id="card${index}" style="background-image:url(${i.image}); width: 200px; height: 300px;"></div>
+const cards = data.map((i, index)=>`<div class="card" id="card${index}" style="background-image:url(${i.image}); width: 200px;"></div>
 `).join('');
 
 
