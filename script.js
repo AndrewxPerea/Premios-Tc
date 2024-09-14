@@ -22,8 +22,8 @@ const data = [
     },
     {
         place:'Fecha',
-        title:'30 de Septiembre 2024',
-        title2:'Te esperamos',
+        title:'30 de Noviembre 2024',
+        title2:'Hora: 06:00 PM',
         description:'"No faltes a los Premios TuCable 2024. Confirma tu asistencia. Te esperamos para una noche inolvidable."',
         image:' /img/img3.jpeg'
     },
@@ -31,8 +31,8 @@ const data = [
 ]
 
 const _ = (id)=>document.getElementById(id)
-const cards = data.map((i, index)=>`<div class="card" id="card${index}" style="background-image:url(${i.image}); width: 200px;"></div>
-`).join('');
+const cards = data.map((i, index)=>`<div class="card" id="card${index}" style="width: 10%; background-image:url(${i.image}); "></div>`).join('');
+
 
 
 
